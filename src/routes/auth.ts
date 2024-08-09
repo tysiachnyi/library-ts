@@ -10,7 +10,7 @@ router.get("/register/:email/:password", async (req, res) => {
   // const { email, password } = req.body;
   const { email, password } = req.params;
   const hashedPassword = await bcrypt.hash(password, 10);
-  const userId = randomInt(1, 1000000); // Adjust the range as needed
+  const userId = randomInt(1, 1000000);
   console.log(hashedPassword);
 
   const params = {

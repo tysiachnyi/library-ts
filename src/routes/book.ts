@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", (req, res) => {
   const params = {
-    TableName: "library", // Replace with your DynamoDB table name
+    TableName: "library",
     Key: {
       id: req.params.id,
     },
